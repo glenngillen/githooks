@@ -38,7 +38,7 @@ class GitHooks
     
     def self.run_tests
       puts "Running tests..."
-      `rake test && bundle exec cucumber features`
+      `rake test > /dev/null 2>&1 && bundle exec cucumber features > /dev/null 2>&1`
       if $? != 0
         puts "Tests failed"
         exit(1)
