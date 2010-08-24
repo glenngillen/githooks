@@ -12,6 +12,11 @@ class GitHooks
   end
   
   private
+    def self.amending?
+      `ps | grep \`ps -f | grep #{$$} | awk '{print $3}' | head -n 1\` | grep -e "--amend"` != ""
+    end
+
+    
     def self.forgotten_debugger?
       files_with_debugger != ""
     end
