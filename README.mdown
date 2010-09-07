@@ -1,0 +1,3 @@
+# Git hooks to make life seem easy
+
+To get a full run down on how these work, take a look at my blog post on [git hooks](http://rubypond.com/blog/slaying-dragons-git-bash-ruby)
