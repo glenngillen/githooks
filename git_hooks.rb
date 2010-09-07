@@ -38,7 +38,7 @@ class GitHooks
     end
 
     def self.committing_to_master?
-      `git symbolic-ref HEAD | grep master` != ""
+      `git rev-parse --abbrev-ref HEAD` == "master"
     end
     
     def self.run_tests
