@@ -38,7 +38,7 @@ class GitHooks
     end
 
     def self.committing_to_master?
-      `git rev-parse --abbrev-ref HEAD` == "master"
+      `git rev-parse --abbrev-ref HEAD`.chomp! == "master"
     end
     
     def self.run_tests
