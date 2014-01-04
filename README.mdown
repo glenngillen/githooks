@@ -1,3 +1,5 @@
 # Git hooks to make life seem easy
 
 To get a full run down on how these work, take a look at my blog post on [git hooks](http://rubypond.com/blog/slaying-dragons-git-bash-ruby)
+
+[![Analytics](https://ga-beacon.appspot.com/UA-46840117-1/githooks/readme?pixel)](https://github.com/igrigorik/ga-beacon)
